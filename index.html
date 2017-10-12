@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./index.css">
+    <title>canvas画板</title>
+</head>
+<body>
+    <section class="mainbody">
+        <header>
+            <ul class="one">
+                <p>文件操作<p>
+                <li><a href="" class="downloadToPic">下载成图片</a></li>
+                <li class="before">上一步</li>
+                <li class="next">下一步</li>
+            </ul>
+            <ul class="two">
+                <p>线条</p>
+                <li class="line">实线</li>
+                <li class="dashline">虚线</li>
+                <li class="blodline">粗实线</li>
+                <li class="bloddashline">粗虚线</li>
+            </ul>
+            <ul class="three">
+                <p>形状</p>
+                <li class="rect">矩形</li>
+                <li class="circle">圆形</li>
+            </ul>
+            <input type="color" class="stroke" title="描边">
+            <input type="color" class="fill" title="填充">
+            <ul class="four">
+                <p class="pain">画笔</p>
+            </ul>
+            <ul class="five">
+                <p>工具</p>
+                <li class="eraser">橡皮擦</li>
+                <li class="cut">剪切工具</li>
+            </ul>
+            <ul class="six">
+                <p>文字</p>
+                <li class="insertFont">插入文字</li>
+            </ul>
+        </header>
+        <div class="canvasbox">
+            <canvas width="1000" height="570"></canvas>
+            <div class="eraserbox"></div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+    <script src="./paintCLass.js"></script>
+</body>
+</html>

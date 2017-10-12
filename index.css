@@ -1,0 +1,91 @@
+*{
+    list-style: none;
+    margin:0;
+    padding: 0;
+    user-select: none;
+}
+section{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20px;
+    margin:auto;
+    width: 1000px;
+    height: 600px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    color:#fff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+canvas{
+    width: 1000px;
+    height: 570px;
+}
+input[type=color]{
+    margin-top: 3px;
+}
+
+ul{
+    z-index: 88;
+    width: 125px;
+    height: 30px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transition-property: height;
+    transition-duration: 1s; 
+}
+li{
+    width: 125px;
+    height: 30px;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity ease 2s;
+}
+li:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+} 
+ul.one:hover{
+    height: 120px;
+}
+ul.two:hover{
+    height: 150px;
+}
+ul.three:hover{
+    height: 90px;
+}
+ul.four:hover{
+    height: 30px;
+}
+ul.five:hover{
+    height: 90px;
+}
+ul.six:hover{
+    height: 60px;
+}
+ul:hover li{
+    opacity: 1;
+}
+
+section>div{
+    position: relative;
+    width: 1000px;
+    height: 570px;
+}
+.eraserbox{
+    position:absolute;
+    left: 0;
+    top: 0;
+    width:20px;
+    height: 20px;
+    display: none;
+    background-color: #fff;
+}
