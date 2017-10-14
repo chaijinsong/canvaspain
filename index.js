@@ -1,4 +1,5 @@
 window.addEventListener('DOMContentLoaded',()=>{
+    
     var obj = new paint(document.getElementsByTagName('canvas')[0]);
     //下载成图片
     var downloadToPic = document.getElementsByClassName('downloadToPic')[0];
